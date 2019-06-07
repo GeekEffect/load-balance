@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RgName=`az group list --query '[].name' --output tsv`
+RgName=`az group list --query '[0].name' --output tsv`
 Location="westus2"
 
 date
