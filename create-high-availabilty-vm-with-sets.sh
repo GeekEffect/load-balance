@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RgName=`az group list --query '[0].name' --output tsv`
-Location="westus2"
+Location="northeurope"
 
 date
 # Create a Virtual Network for the VMs
