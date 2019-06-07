@@ -1,7 +1,7 @@
 #!/bin/bash
 
-RgName=`az group list --query '[].name' --output tsv`
-Location=`az group list --query '[].location' --output tsv`
+RgName=`az group list --query '[0].name' --output tsv`
+Location=`az group list --query '[0].location' --output tsv`
 
 date
 # Create a Virtual Network for the VMs
